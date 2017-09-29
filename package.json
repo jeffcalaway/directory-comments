@@ -1,6 +1,6 @@
 {
   "name": "directory-comments",
-  "version": "0.8.4",
+  "version": "0.9.0",
   "description": "Decorative comment and DocBlock snippets specifically for organization",
   "keywords": [
     "snippets",
@@ -10,7 +10,7 @@
     "docblock"
   ],
   "activationCommands": {
-      "atom-workspace": "docblock:new-line"
+    "atom-workspace": "docblock:new-line"
   },
   "main": "./lib/directory-comments",
   "repository": "https://github.com/jmcalaway/directory-comments.git",
