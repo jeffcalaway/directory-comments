@@ -102,6 +102,12 @@
 			*    @version 1.0.0$1
 		"""
 
+	'DocBlock Author':
+		'prefix': 'naa'
+		'body': """
+			*    @author ${1:Name}
+		"""
+
 	'DocBlock Return':
 		'prefix': 'nar'
 		'body': """
