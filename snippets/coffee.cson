@@ -29,11 +29,11 @@
 
 	'Directory Section':
 		'prefix': 'dsec'
-		'body': '//    _${1:Section}'
+		'body': '##    _${1:Section}'
 
 	'Directory Subsection':
 		'prefix': 'dsub'
-		'body': '//      ∟${1:Subsection}'
+		'body': '##      ∟${1:Subsection}'
 
 
 	##≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
