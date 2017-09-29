@@ -92,6 +92,6 @@
 	'DocBlock Function Use':
 		'prefix': 'buse'
 		'body': """
-			*    @uses ${1:Function Name}
+			@uses ${1:Function Name}
 			*       [${2:File Path}]
 		"""
