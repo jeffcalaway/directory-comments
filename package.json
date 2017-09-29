@@ -1,0 +1,14 @@
+{
+  "name": "directory-comments",
+  "main": "./lib/directory-comments",
+  "version": "1.0",
+  "description": "Decorative comment and DocBlock snippets specifically for organization",
+  "keywords": [],
+  "activationCommands": {},
+  "repository": "https://github.com/jmcalaway/directory-comments.git",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0"
+  },
+  "dependencies": {}
+}
