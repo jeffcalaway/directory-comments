@@ -9,7 +9,10 @@
     "comments",
     "docblock"
   ],
-  "activationCommands": {},
+  "activationCommands": {
+      "atom-workspace": "docblock:new-line"
+  },
+  "main": "./lib/directory-comments",
   "repository": "https://github.com/jmcalaway/directory-comments.git",
   "license": "MIT",
   "engines": {
