@@ -70,7 +70,7 @@
 		'body': """
 			/** ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 			*
-			n${1:desc}
+			na${1:d}
 			*
 			*///≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 
@@ -82,7 +82,7 @@
 		'body': """
 			/** ∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵
 			*
-			n${1:desc}
+			na${1:d}
 			*
 			*///∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴
 
@@ -90,38 +90,38 @@
 		"""
 
 	'DocBlock Description':
-		'prefix': 'ndesc'
+		'prefix': 'nad'
 		'body': """
 			*    Description:
 			*    ${1:Start describing code below}
 		"""
 
 	'DocBlock Version':
-		'prefix': 'nver'
+		'prefix': 'nav'
 		'body': """
 			*    @version 1.0.0$1
 		"""
 
 	'DocBlock Return':
-		'prefix': 'nret'
+		'prefix': 'nar'
 		'body': """
 			*    @return ${1:string} $2
 		"""
 
 	'DocBlock Parameters':
-		'prefix': 'npara'
+		'prefix': 'nap'
 		'body': """
 			*    @param ${1:Parameter} $2
 		"""
 
 	'DocBlock See':
-		'prefix': 'nsee'
+		'prefix': 'nas'
 		'body': """
 			*    @see ${1:Reference} $2
 		"""
 
 	'DocBlock Function Use':
-		'prefix': 'nuse'
+		'prefix': 'nau'
 		'body': """
 			*    @uses ${1:Function Name}
 			*       [${2:File Path}]
