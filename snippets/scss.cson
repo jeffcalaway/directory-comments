@@ -28,12 +28,12 @@
 			$2
 		"""
 
-	'Directory Section':
-		'prefix': 'dsec'
+	'Directory (Index) Section':
+		'prefix': 'isec'
 		'body': '//    _${1:Section}'
 
-	'Directory Subsection':
-		'prefix': 'dsub'
+	'Directory (Index) Subsection':
+		'prefix': 'isub'
 		'body': '//      ∟${1:Subsection}'
 
 
@@ -47,7 +47,6 @@
 			//▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 			// _${1:Section}
 			//▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
 			$2
 		"""
 
@@ -57,7 +56,6 @@
 			//░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 			// ∟${1:Subsection}
 			//░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-
 			$2
 		"""
 

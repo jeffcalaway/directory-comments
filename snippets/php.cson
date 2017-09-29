@@ -28,12 +28,12 @@
 			$2
 		"""
 
-	'Directory Section':
-		'prefix': 'dsec'
+	'Directory (Index) Section':
+		'prefix': 'isec'
 		'body': '//    _${1:Section}'
 
-	'Directory Subsection':
-		'prefix': 'dsub'
+	'Directory (Index) Subsection':
+		'prefix': 'isub'
 		'body': '//      ∟${1:Subsection}'
 
 
@@ -47,7 +47,6 @@
 			//≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 			// _${1:Section}
 			//≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-
 			$2
 		"""
 
@@ -57,7 +56,6 @@
 			//∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴
 			// ∟${1:Subsection}
 			//∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴
-
 			$2
 		"""
 
@@ -65,68 +63,86 @@
 	## _DocBlocks (Notes)
 	##≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 
-	'Section DocBlock':
-		'prefix': 'nsec'
+	'DocBlock (Notes) Section':
+		'prefix': 'ns'
 		'body': """
 			/** ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 			*
 			na${1:v}
 			*
 			*///≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-
-			$2
 		"""
 
-	'Subsection DocBlock':
-		'prefix': 'nsub'
+	'DocBlock (Notes) Section w/ Version & Author':
+		'prefix': 'nsva'
+		'body': """
+			/** ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+			*
+			*    @version 1.0.0
+			*    @author ${1:Name} (${2:1.0.0})
+			*
+			*///≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+		"""
+
+	'DocBlock (Notes) Subsection':
+		'prefix': 'nss'
 		'body': """
 			/** ∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵
 			*
 			na${1:v}
 			*
 			*///∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴
-
-			$2
 		"""
 
-	'DocBlock Description':
+	'DocBlock (Notes) Subsection w/ Version & Author':
+		'prefix': 'nssva'
+		'body': """
+			/** ∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵
+			*
+			*    @version 1.0.0
+			*    @author ${1:Name} (${2:1.0.0})
+			*
+			*///∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴
+		"""
+
+	'DocBlock (Notes) Description':
 		'prefix': 'nad'
 		'body': """
 			*    Description:
 			*    ${1:Start describing code below}
 		"""
 
-	'DocBlock Version':
+	'DocBlock (Notes) Version':
 		'prefix': 'nav'
 		'body': """
 			*    @version 1.0.0$1
 		"""
 
-	'DocBlock Author':
+	'DocBlock (Notes) Author':
 		'prefix': 'naa'
 		'body': """
-			*    @author ${1:Name} (${2:Version Used})
+			*    @author ${1:Name} (${2:1.0.0})
 		"""
 
-	'DocBlock Return':
+	'DocBlock (Notes) Return':
 		'prefix': 'nar'
 		'body': """
 			*    @return ${1:string} $2
 		"""
 
-	'DocBlock Parameters':
+	'DocBlock (Notes) Parameters':
 		'prefix': 'nap'
 		'body': """
 			*    @param ${1:Parameter} $2
 		"""
 
-	'DocBlock See':
+	'DocBlock (Notes) See':
 		'prefix': 'nas'
 		'body': """
 			*    @see ${1:Reference} $2
 		"""
 
-	'DocBlock Function Use':
+	'DocBlock (Notes) Function Use':
 		'prefix': 'nau'
 		'body': """
 			*    @uses ${1:Function Name}
