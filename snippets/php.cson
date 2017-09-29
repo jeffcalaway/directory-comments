@@ -66,11 +66,11 @@
 	##≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 
 	'Section DocBlock':
-		'prefix': 'bsec'
+		'prefix': 'dbsec'
 		'body': """
 			/** ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 			*
-			*    ${1:Documentation}
+			${1:dbdesc}
 			*
 			*///≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 
@@ -78,7 +78,7 @@
 		"""
 
 	'Subsection DocBlock':
-		'prefix': 'bsub'
+		'prefix': 'dbsub'
 		'body': """
 			/** ∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵
 			*
@@ -89,9 +89,40 @@
 			$2
 		"""
 
-	'DocBlock Function Use':
-		'prefix': 'buse'
+	'DocBlock Description':
+		'prefix': 'dbd'
 		'body': """
-			@uses ${1:Function Name}
+			*    Description:
+			*    ${1:Start describing code below}
+		"""
+
+	'DocBlock Version':
+		'prefix': 'dbv'
+		'body': """
+			*    @version 1.0.0$1
+		"""
+
+	'DocBlock Return':
+		'prefix': 'dbr'
+		'body': """
+			*    @return ${1:string} $2
+		"""
+
+	'DocBlock Parameters':
+		'prefix': 'dbp'
+		'body': """
+			*    @param ${1:Parameter} $2
+		"""
+
+	'DocBlock See':
+		'prefix': 'dbs'
+		'body': """
+			*    @see ${1:Reference} $2
+		"""
+
+	'DocBlock Function Use':
+		'prefix': 'dbu'
+		'body': """
+			*    @uses ${1:Function Name}
 			*       [${2:File Path}]
 		"""
