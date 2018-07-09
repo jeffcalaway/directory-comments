@@ -32,3 +32,5 @@ apm install directory-comments
 ```
 Or Preferences ➔ Install ➔ Search for `directory-comments`
 
+## Release Notes
+For release notes and version history, view the [change log](https://github.com/heycalaway/directory-comments/blob/master/changelog.md#change-log).
